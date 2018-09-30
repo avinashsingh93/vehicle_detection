@@ -6,15 +6,15 @@
 
 
 [//]: # (Image References)
-![Car Hog features][/output_images/car_hog_feature.png]
-![Non Car Hog features][/output_images/non_car_hog_feature.png]
-![heatmap][/output_images/heatmap.png]
-![output_image 1][/output_images/test1_outputimage.png]
-![output_image 2][/output_images/test2_outputimage.png]
-![output_image 3][/output_images/test3_output_image.png]
-![output_image 4][/output_images/test4_output_image.png]
-![output_image 5][/output_images/test5_output_image.png]
-![output_image 6][/output_images/test_image6.png]
+![Car Hog features](/output_images/car_hog_feature.png)
+![Non Car Hog features](/output_images/non_car_hog_feature.png)
+![heatmap](/output_images/heatmap.png)
+![output_image 1](/output_images/test1_outputimage.png)
+![output_image 2](/output_images/test2_outputimage.png)
+![output_image 3](/output_images/test3_output_image.png)
+![output_image 4](/output_images/test4_output_image.png)
+![output_image 5](/output_images/test5_output_image.png)
+![output_image 6](/output_images/test_image6.png)
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -31,11 +31,11 @@ You're reading it!
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 I started by reading in all the `vehicle` and `non-vehicle` images.  Here are the images of one of each of the `vehicle` and `non-vehicle` classes:
 
-![Car Hog features][/output_images/car_hog_feature.png]
+![Car Hog features](/output_images/car_hog_feature.png)
 
 I then took a random image and perfomed extracted some of the features of the image.  Below are the hog feature of the one 'car' object and 'non-car object'.:
 
-![Non Car Hog features][/output_images/non_car_hog_feature.png]
+![Non Car Hog features](/output_images/non_car_hog_feature.png)
 
 Also I used `YCrCb` color space and HOG parameters of `orientations=16`, `pixels_per_cell=16 and ` `cells_per_block=2`, `hog_channel=0`, `spatial_size = (16, 16)` and `hist_bins = 16`:
 
@@ -68,12 +68,12 @@ I decided to take 3 windows with sizezs (64, 64) , (96, 96) and (128, 128) to pe
 
 Below are some of the examples of test images for which my pipeline is working fine:
 
-![output_image 1][/output_images/test1_outputimage.png]
-![output_image 2][/output_images/test2_outputimage.png]
-![output_image 3][/output_images/test3_output_image.png]
-![output_image 4][/output_images/test4_output_image.png]
-![output_image 5][/output_images/test5_output_image.png]
-![output_image 6][/output_images/test_image6.png]
+![output_image 1](/output_images/test1_outputimage.png)
+![output_image 2](/output_images/test2_outputimage.png)
+![output_image 3](/output_images/test3_output_image.png)
+![output_image 4](/output_images/test4_output_image.png)
+![output_image 5](/output_images/test5_output_image.png)
+![output_image 6](/output_images/test_image6.png)
 
 ---
 
@@ -86,8 +86,8 @@ Earlier i was not getting a good accuracy when using linear model to train the c
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 Here's a link to my project video and test video:
 
-![project_output_video][/output_videos/project_video_output.mp4]
-![test_video_output][/output_videos/test_output_video.mp4]
+![project_output_video](/output_videos/project_video_output.mp4)
+![test_video_output](/output_videos/test_output_video.mp4)
 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
@@ -97,7 +97,7 @@ I recorded the positions of positive detections in each frame of the video.  Fro
 Below is one of the image of heat map after the required function was added in the code:
 
 
-![heatmap][/output_images/heatmap.png]
+![heatmap](/output_images/heatmap.png)
 
 
 
